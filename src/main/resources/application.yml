@@ -1,0 +1,13 @@
+server:
+  port : 8081
+
+spring:
+  jms:
+    servicebus:
+      enabled: true
+      connection-string: Endpoint=sb://<REPLACEME>
+      pricing-tier: "standard"
+      pool:
+        enabled: false
+      listener:
+        subscription-shared: true
